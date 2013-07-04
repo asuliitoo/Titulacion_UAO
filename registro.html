@@ -8,7 +8,10 @@
 	<form action="registro_funcion.php" method="post">
 	
 		User: 				<input type="text"     name="user">	  <br/>
-		Rol:				<input type="text"	   name="rol">	  <br/>
+		Rol:				<select name="rol"> 
+   								<option value="1">Administrador</option>
+   								<option value="2">Asistente</option>
+							</select><br/>
 		Password:  			<input type="password" name="pass">	  <br/>
 		Confirm Password: 	<input type="password" name="pass2">  <br/>
 		<input type="submit" value = "Register">

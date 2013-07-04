@@ -82,13 +82,13 @@
 								/*
 								* Consulta INSERT para agregar al nuevo usuario
 								*/
-								$consulta = "INSERT INTO usurio (nombre_usuario,password)
-											 VALUES ('$usuario','$contra') ";
+								$consulta = "INSERT INTO usurio (nombre_usuario,password,fk_rol)
+											 VALUES ('$usuario','$contra','$_POST[Rol]') ";
 
 								/*
 								* Ejecucion de la consulta
 								*/
-								$result = $conn->conecta()->query($consulta);
+								$result = $conn->conecta()->query($consulta);								
 							}
 			}
 		}			
@@ -98,8 +98,7 @@
 						ECHO "<br/>";
 					}*/
 					//printf("\n%s", $row[0]);
-				//ECHO "<br/>";
-				
+				//ECHO "<br/>";				
 ?>
 
 
