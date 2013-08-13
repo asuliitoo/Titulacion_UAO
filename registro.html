@@ -1,19 +1,29 @@
 <html>
+
 <head>
+	
 	<title>Registro</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-
-	<form action="registro_funcion.php" method="post">
 	
-		User: 				<input type="text"     name="user">	  <br/>
-		Rol:				<select name="rol"> 
+
+	<form name="registro" action="nuevoUsuario.php" method="post" >
+	
+		User: 			  	<input type="text"     name="user" required>	  
+							<br/>
+
+		Rol:			  	<select name="rol"> 
    								<option value="1">Administrador</option>
    								<option value="2">Asistente</option>
-							</select><br/>
-		Password:  			<input type="password" name="pass">	  <br/>
-		Confirm Password: 	<input type="password" name="pass2">  <br/>
+						  	</select><br/>
+
+		Password:  		  	<input type="password" name="pass" required>	  
+							<br/>
+
+		Confirm Password: 	<input type="password" name="pass2" required>  
+							<br/>
+							
 		<input type="submit" value = "Register">
 
 	</form>

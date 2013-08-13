@@ -1,0 +1,78 @@
+
+input[type="checkbox"]{
+	margin-left: 40%;
+}
+
+.table{
+	position: absolute;
+	background-color:white;	
+	font-family:Segoe UI;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 5%;
+	width: 95%;
+	border:1px solid;
+	border-color: gray;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+.table-title{
+	position: relative;
+	/*background-color: #DC143C;*/
+	/*background-color: #FF4500;*/
+	background-color: #1C1C1C;
+	color: white;
+	font-size: 17px;	
+	font-weight: ;
+	text-align: center;
+	padding-top: 1%;
+	width: 100%;
+	height: 30px;
+}
+
+.table-ID{
+	position: relative;
+	text-align: center;
+	float: left;
+	width: 9%;	
+}
+
+.table-campo{
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 21%;
+}
+
+.table-checkbox{
+	position: relative;
+	float:left;
+	width: 7%;	
+}
+
+.table-btn{
+	position: relative;
+	text-align: center;
+	float:left;
+	width: 9%; 
+}
+
+.table-progress{
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 11%;
+}
+
+/***************************************************/
+.table-row{
+	position: relative;
+	/*background-color: white;*/
+	height: 30;
+	border-color: gray;
+	border-bottom:1px solid;
+	padding-top: 1%;	
+	font-size: 14px;
+}

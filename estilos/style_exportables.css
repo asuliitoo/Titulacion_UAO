@@ -1,0 +1,69 @@
+#div_opc{
+	background: #FAFAFA;
+	height: 100%;
+}
+
+#div_regresar{
+	float: right;
+	width: 125px;
+	padding-top: 20px;
+	margin-right: 50px;
+}
+
+#opciones{
+	padding-top: 120px;
+}
+
+#botonatras{
+	background-color: #000;
+	width: 90px;
+	height: 35px;
+	float: right;
+	position: relative;
+}
+
+#iconoatras{
+	background-color: #FFB900;
+	width: 35px;
+	height: 35px;
+	float: right;
+	position: relative;
+}
+
+#texto{
+	padding-top: 7px;
+	padding-left: 25px;
+	font-size: 18px;
+	color: #fff;
+}
+
+
+.opc{
+	background-color: #FFB900;
+	width: 418px;
+	height: 145px;
+	font-size: 35px;
+	text-align: center;
+	display: inline-table;
+	margin-top: 30px;
+	border-radius: 2px;
+	color: #FFF;
+	position: relative;
+}
+
+.opc:hover{
+	background-color: #086A74;
+	color: #FFF;
+}
+
+.texto{
+	padding-top: 60px;
+	display: inline-table;
+	font-family: Segoe UI Light;
+}
+
+.icono{
+    float: right;
+	margin-right: 60px;
+	margin-top: 40px;
+}

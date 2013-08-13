@@ -21,12 +21,17 @@
 	*/
 	$usuario = strtolower($_POST['user']);
 	//ECHO "$usuario";
-
 	
 	/*
 	* Verificar que el campo de usuario no se encuentre vacío.	
 	*/
-	if($usuario == ''){
+	/*function revisar(){
+		if(registro.user==""){
+			alert('Ingrese un nombre de usuario');
+			return false;
+		}
+	}*/
+	if($usuario == ' '){
 		ECHO "No se ha ingresado un nombre de usuario";
 	}
 
@@ -35,7 +40,7 @@
 		* Consulta para verificar que el nuevo usuario no exista en la BD
 		*/
 		$Q_usuario = "SELECT nombre_usuario FROM usurio WHERE nombre_usuario = '$usuario' ";
-		$result = $conn->conecta()->query($Q_usuario);
+		$result = $conn->consulta($Q_usuario);
 
 		/*
 		* Si se encuentra algun elemento que coincida con el nuevo usuario
@@ -52,7 +57,7 @@
 				/*
 				* Verificar que el campo "contraseña" no se encuentre vacío
 				*/	
-				if($_POST['pass']== ''){
+				if($_POST['pass']== ' '){
 					ECHO "No se ha ingresado una contrasenia";
 				}
 					/*
@@ -83,12 +88,12 @@
 								* Consulta INSERT para agregar al nuevo usuario
 								*/
 								$consulta = "INSERT INTO usurio (nombre_usuario,password,fk_rol)
-											 VALUES ('$usuario','$contra','$_POST[Rol]') ";
+											 VALUES ('$usuario','$contra','$_POST[rol]') ";
 
 								/*
 								* Ejecucion de la consulta
 								*/
-								$result = $conn->conecta()->query($consulta);								
+								$result = $conn->consulta($consulta);								
 							}
 			}
 		}			

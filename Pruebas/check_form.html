@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Validaciones</title>
+	<script type="text/javascript" src="../jQuery/jQuery.js"></script>
+</head>
+<body>
+
+	<form  method="post" >	
+					Idiomas   	<input type="checkbox" name="" id="idiomas">
+					Documento 	<input type="checkbox" name="" id="documento">
+					Servicio	<input type="checkbox" name="" id="servicio">
+					Pago		<input type="checkbox" name="" id="pago">					
+					<input id= "unlock-button" class="enviar" type="button" value = "Guardar" >    
+                    <div id="aviso"><div>
+     </form> 
+</body>
+
+<script type="text/javascript">
+	$(document).ready( function (){
+		$(".enviar").click(function (){
+			if ( $('#idiomas:checked').val()=="on"){
+				alert ("idiomas");
+			}
+
+			if ( $('#documento:checked').val()=="on"){
+				alert (" documento");
+			}
+
+			if ( $('#servicio:checked').val()=="on"){
+				alert ("servicio social");
+			}
+
+			if ( $('#pago:checked').val()=="on"){
+				alert ("Pagado");
+			}
+		});
+	});
+
+</script>
+</html>

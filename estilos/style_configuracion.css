@@ -1,0 +1,38 @@
+#div_opc{
+	background: #FAFAFA;
+	height: 100%;
+}
+
+#opciones{
+	padding-top: 80px;
+}
+
+.opc{
+	background-color: #086A74;
+	width: 418px;
+	height: 145px;
+	font-size: 35px;
+	text-align: center;
+	display: inline-table;
+	margin-top: 30px;
+	border-radius: 2px;
+	color: #FFF;
+	position: relative;
+}
+
+.opc:hover{
+	background-color: #FFB900;
+	color: #FFF;
+}
+
+.texto{
+	padding-top: 60px;
+	display: inline-table;
+	font-family: Segoe UI Light;
+}
+
+.icono{
+    float: right;
+	margin-right: 60px;
+	margin-top: 40px;
+}

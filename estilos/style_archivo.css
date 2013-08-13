@@ -1,0 +1,12 @@
+.formulario{
+	position: absolute;
+	width: 800px;
+	height: 100px;
+	left:50%;
+	top:50%;	
+	margin-top: -50px;
+	margin-left: -400px;
+	text-align: center;
+	background-color: orange;
+	color:white;
+}

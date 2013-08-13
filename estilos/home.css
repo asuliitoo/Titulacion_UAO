@@ -1,0 +1,127 @@
+
+
+body{
+		height:  100%;
+  		background-image: url('./img/bg.png');
+     	background-color: #FF7519;
+}
+
+.menus {
+	/*background: #FF7519; /*ANARANJADO*/
+	/*background: #FFB900; /*AMARILLO*/
+	background: #1c2125; /*NEGRO*/
+	height: 100%;
+	width: 210px;
+	float: left;
+	position: absolute;
+}
+
+.titulo{
+	font-family: Segoe UI Light;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 40px;
+    color: #FAFAFA;
+    text-rendering: optimizelegibility;
+}
+
+.titulo:hover{
+	color: #D4C9AD;
+	text-decoration: none;
+}
+
+.areacontenido{
+	float: left;
+	/*background: #F1ECDF;*/
+	background:  #F58723;
+	/*background: #C7BA99;*/
+	height: 100%;
+	width: 84.5%;
+	margin-left: 210px;
+	position: relative;
+}
+
+.contenido{
+	float: right;
+	width: 100%;
+	position: absolute;
+	background-image: url('../img/bg.png');
+	height: 95%;
+}
+
+.botones{
+	background: #FAFAFA;
+	/*background: #1c2125;*/
+	width: 204px;
+	height: 47px;
+	font-size: 22px;
+	text-align: left;
+	font-family: Segoe UI Light;
+	color: #1c2125;
+	font-weight: normal;
+	padding-top: 23px;
+	margin-top: 1px;
+	padding-left: 6px;
+	float: left;
+}
+
+.botones:hover{
+	background: #73C5A1;
+	text-align: left;
+	color: #FAFAFA;
+}
+
+.botones:visited{
+	background: #FF7519;
+}
+
+
+.barraestado{
+	/*background: #FF7519;*/
+	/*background: #FAFAFA;*/
+	background: #FAFAFA;
+	height: 5%;
+	width: 100%;
+}
+
+.icon{
+	float: right;
+	padding-right: 10px;
+	margin-top: -9px;
+}
+
+.logo{
+	position: relative;
+	top:40%;
+	left:50%;
+	width: 100%;
+	height: 250px;
+	margin-top: -125px;
+	margin-left: -50%;
+	
+}
+.Bienvenido{
+	position: relative;
+	padding-top: 2%;
+	top:30%;
+	left:50%;
+	width: 100%;
+	height: 50px;
+	margin-top: -25px;
+	margin-left:-50%;
+	font-size:40px; 
+	text-align:center;
+	background: #1c2125;
+	color: #FAFAFA;
+}
+
+.A{
+	position: relative;
+	top:10%;
+	left:50%;
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+	margin-left: -50px;
+}

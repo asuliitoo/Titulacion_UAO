@@ -1,0 +1,132 @@
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./jQuery/scriptHome.js"></script>
+	<link rel="stylesheet" type "text/css" href = "./bootstrap/css/bootstrap.css">
+	<title>Inicio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<style>
+
+.menus {
+	background: #1c2125;
+	background-image: url('./img/bg.png');
+	height: 100%;
+	width: 210px;
+	float: left;
+	position: absolute;
+}
+
+.titulo{
+	margin: 20px 0;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    color: white;
+    text-rendering: optimizelegibility;
+}
+
+.titulo:hover{
+	color: #FF7519;
+	text-decoration: none;
+}
+
+.botonactivo{
+	background: #FAFAFA;
+	text-align: left;
+	color: #000;
+}
+
+.areacontenido{
+	float: left;
+	background: #FAFAFA;
+	height: 100%;
+	width: 84.6%;
+	margin-left: 210px;
+	position: relative;
+}
+
+.contenido{
+	float: right;
+	width: 100%;
+	position: absolute;
+	background-image: url('./img/bg.png');
+	height: 95%;
+
+}
+
+.botones{
+	background: #FF7519;
+	width: 210px;
+	height: 47px;
+	font-size: 22px;
+	text-align: left;
+	font-family: Segoe UI Light;
+	color: #000;
+	font-weight: normal;
+	padding-top: 23px;
+	margin-top: 2px;
+	padding-left: 10px;
+	float: left;
+}
+
+.botones:hover{
+	background: #FAFAFA;
+	text-align: left;
+	color: #000;
+}
+
+.botonactivo{
+	background: #FAFAFA;
+	text-align: left;
+	color: #000;
+}
+
+.barraestado{
+	background: #FF7519;
+	height: 5%;
+	width: 100%;
+}
+
+.icon{
+	float: right;
+	padding-right: 18px;
+	margin-top: -9px;
+}
+
+</style>
+
+<body>
+	<div>
+		<div class="menus">
+			<div id="titulo" class="titulo" align=center style="cursor:pointer">SISTEMA DE TITULACIÓN</div>
+			<div id="btn0" class="botones" style="cursor:pointer">Configuración<div class="icon"><img src="./iconos/settings.png"></div></div>
+			<div id="btn1" class="botones" style="cursor:pointer">Ver candidatos<div class="icon"><img src="./iconos/student.png"></div></div>
+			<div id="btn2" class="botones" style="cursor:pointer">Validaciones<div class="icon"><img src="./iconos/check.png"></div></div>
+			<div id="btn3" class="botones" style="cursor:pointer">Titulación<div class="icon"><img src="./iconos/edit.png"></div></div>
+			<div id="btn5" class="botones" style="cursor:pointer">Exportables<div class="icon"><img src="./iconos/send.png"></div></div>
+			<!--img  hspace = 30px src="./img/logo_anahuac.png" class="img-cirle" #43ADD0  424242gris menu-->
+
+		</div>
+
+		<div class="areacontenido">
+			<div class="barraestado" align = right>
+				AQUI VA LA SESIÓN INICIADA O DATOS GENERALES
+			</div>
+				<div id="content" class="contenido">
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+
+
+</html>
