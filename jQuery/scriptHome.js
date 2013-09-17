@@ -31,8 +31,17 @@ $(document).ready(function(){
 		$('#btn2').addClass("botonactivo");
 		$('#content').fadeOut('fast');
 		$('#content').fadeIn('slow');
-		$('#content').load('validaciones.php');
+		$('#content').load('formValidaciones.php');
 	});
+
+	$('#btn3').click(function(){
+		$('#btn0,#btn1,#btn2,#btn4,#btn5').removeClass("botonactivo");
+		$('#btn3').addClass("botonactivo");
+		$('#content').fadeOut('fast');
+		$('#content').fadeIn('slow');
+		$('#content').load('tableTitulacion.php');
+	});
+
 
 
 	$('#btn5').click(function(){

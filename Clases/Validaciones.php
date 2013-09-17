@@ -30,6 +30,7 @@
 					WHERE fk_alumno = $alumno";
 
 			$result = $this->conexion->consulta($sql);
+			
 			//var_dump($result);
 
 			if ($result)

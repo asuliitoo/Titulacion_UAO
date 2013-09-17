@@ -8,9 +8,9 @@
 	$entidad 		 = $_POST["entidad"];
 
 	$preparatoria = new Bachillerato($Conn);
-	$bach = $preparatoria->nuevoBachillerato($bachillerato, $entidad);
+	$prepa = $preparatoria->nuevoBachillerato($bachillerato, $entidad);
 	
-	if ($bach){
-		ECHO "Bachillerato agregado correctamente";
-	}
+
+	ECHO $prepa;
+
 ?>

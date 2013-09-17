@@ -1,5 +1,4 @@
 
-
 function check(field,id){
 
 	//		val 	Array  		Almacena los checkbox seleccionados,	

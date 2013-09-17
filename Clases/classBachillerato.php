@@ -5,6 +5,8 @@
 	class Bachillerato{
 
 		private $conexion;
+		private $msjSuccess = "Bachillerato agregado correctamente";
+		private $msjWarning = "Algo salio mal, intente otra vez";
 		private $msjError = "Al parecer el Bachillerato ya existe";
 
 
@@ -15,7 +17,7 @@
 
 		function nuevoBachillerato ($bachillerato, $entidad){
 
-			$existe = $this->existeBachillerato($bachillerato);
+			$existe = $this->existeBachilleratoDatos($bachillerato,$entidad);
 			
 			if($existe)
 				{	return $this->msjError;	}
@@ -28,23 +30,23 @@
 				$sentencia = $this->conexion->consulta($sql);
 
 				if($sentencia)
-					{return true;}
+					{return $this->msjSuccess;}
 					
 				else
-					{return false;}
+					{return $this->msjWarning;}
 			}
 				
 		}
 
-		function eliminarBachillerato($bachillerato){
+		function eliminarBachillerato($id){
 
-			$existe = $this->existeBachillerato($bachillerato);
+			$existe = $this->existeBachillerato($id);
 
 			if($existe == false){
 				return false;
 			}
 			else{
-				$sql = "DELETE FROM preparatoria WHERE nombre_preparatoria = '$bachillerato' ";
+				$sql = "DELETE FROM preparatoria WHERE id_preparatoria = '$id' ";
 				$borrar = $this->conexion->consulta($sql);
 
 				if ($borrar)
@@ -52,13 +54,13 @@
 				
 				else
 					return false;
-			}			
+			}					
 		}
 
 		function actualizarBachillerato($bachillerato, $entidad,$id){
-			/*
-			$sql = "UPDATE preparatoria SET nombre_carrera = $bachillerato, i_area = $area, i_subArea = $subArea, i_nivel=$nivel, consecutivo=$consecutivo
-					WHERE id_usuario = $id";
+			
+			$sql = "UPDATE preparatoria SET nombre_preparatoria = '$bachillerato', entidad_preparatoria = '$entidad'
+					WHERE id_preparatoria = $id";
 
 			$actuliza = $this->conexion->consulta($sql);
 
@@ -66,14 +68,14 @@
 				return true;
 			else 
 				return false;
-				*/
+			
 		}
 
-		function existeBachillerato($bachillerato){
+		function existeBachillerato($id){
 			
-			$sql = "SELECT * FROM preparatoria WHERE nombre_preparatoria = '$bachillerato'";
+			$sql = "SELECT * FROM preparatoria WHERE id_preparatoria = '$id'";
 
-			$existe = $this->conexion->consulta($sql);			
+			$existe = $this->conexion->consulta($sql);
 
 			$num = $existe->num_rows;
 			
@@ -82,6 +84,23 @@
 			
 			else 
 				return true;
+		}
+
+		function existeBachilleratoDatos($nombre_preparatoria,$entidad_preparatoria){
+			
+			$sql = "SELECT * FROM preparatoria WHERE nombre_preparatoria = '$nombre_preparatoria' 
+												AND entidad_preparatoria = '$entidad_preparatoria'";
+
+			$existe = $this->conexion->consulta($sql);
+			
+			$num = $existe->num_rows;
+			
+			if ( $num == 0)
+				return false;			
+			
+			else 
+				return true;
+			
 		}
 
 

@@ -3,30 +3,35 @@
 <head>
 	
 	<title>Registro</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	    <meta name="language" content="es" />
+
+	    <script type="text/javascript" src="./jQuery/jQuery.js"></script>
+    	<script type="text/javascript" src="./jQuery/scriptRegistro.js"></script>
+
 </head>
 <body>
 	
 
-	<form name="registro" action="nuevoUsuario.php" method="post" >
+
+	<br><label>Nombre de Usuario</label>
+	<input type="text"     name="user" required>	  
+
+	<br><label>Contraseña</label>
+		<input type="password" name="pass" required>	  
 	
-		User: 			  	<input type="text"     name="user" required>	  
-							<br/>
+	<br><label>Confirmar contraseña</label>
+		<input type="password" name="pass2" required> 
 
-		Rol:			  	<select name="rol"> 
-   								<option value="1">Administrador</option>
-   								<option value="2">Asistente</option>
-						  	</select><br/>
-
-		Password:  		  	<input type="password" name="pass" required>	  
-							<br/>
-
-		Confirm Password: 	<input type="password" name="pass2" required>  
-							<br/>
+	<br><label>Rol</label>
+	<select name="rol"> 
+   		<option value="1">Administrador</option>
+   		<option value="2">Asistente</option>
+	</select> 
 							
-		<input type="submit" value = "Register">
+	<br><input type="button" value = "Registrar" id="enviar">
 
-	</form>
+
 
 </body>
 </html>

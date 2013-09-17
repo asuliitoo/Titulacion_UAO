@@ -109,6 +109,7 @@
 		function insertarBD($conn){
 
 			$open = $this->abrirArchivo();
+			$i=0;
 
 			while( ($row = fgetcsv($open,1000,",","\n")) !== false ){
 				//almacenar los campos en variables
@@ -123,7 +124,8 @@
 				$c_ganados		=$row[8];
 				$p_avance		=$row[9];
 				$c_avance		=$row[10];
-
+				
+				
 				/**
 				*	limpiar_entrada: verifica que las variables estén codificadas en UTF-8
 				*/

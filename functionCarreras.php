@@ -14,7 +14,7 @@
 
 	$lic = $licenciatura->nuevaLicenciatura($carrera, $area, $subArea, $nivel, $consecutivo);
 
-	if ($lic)
-		ECHO "Licenciatura agregada correctamente";
+	ECHO $lic;
+	
 
 ?>

@@ -9,7 +9,7 @@
 
 
 		$Registro = new Registro($Conn);
-		$existe = $Registro->existeUsuario($user,$password);	
+		$existe = $Registro->buscaUsuario($user,$password);	
 		
 		if($existe){
 			ECHO "<script language='Javascript'>
